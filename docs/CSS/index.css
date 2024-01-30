@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-#page-header .navbar{
-    display:none;
-}
-
 body {
     background-color: rgb(70, 70, 70);
     margin: 0;
