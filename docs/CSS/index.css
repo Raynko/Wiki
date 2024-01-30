@@ -1,0 +1,110 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(70, 70, 70);
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    padding: 20px;
+}
+
+.background-image {
+    background-image: url('../IMG/WALL/Wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed; /* Fixe l'élément à la fenêtre, de sorte qu'il reste en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place l'élément en arrière-plan */
+}
+
+/* Place 'image plus sombre */
+.background-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Couleur sombre semi-transparente */
+    z-index: 0; /* Assurez-vous que le pseudo-élément est en dessous de l'image de fond */
+}
+
+.univers-title {
+    color: white;
+    font-size: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.main-panel {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:space-between;
+}
+
+.section-title {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button-page {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    height: 75px;
+    width: calc(33.33% - 5px);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Media queries pour ajuster le nombre de colonnes en fonction de la largeur de la page */
+@media (max-width: 800px) {
+    .button-page {
+        width: calc(50% - 5px);
+    }
+}
+
+.button-page:hover {
+    background-color: rgb(0, 105, 88);
+}
+
+.ComingSoon {
+    background-color: rgb(60, 60, 60);
+    color: rgb(150, 150, 150);
+    cursor: not-allowed;
+}
+
+.ComingSoon:hover {
+    background-color: rgb(60, 60, 60);
+}
+
