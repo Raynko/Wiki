@@ -1,2 +1,2 @@
-# ModsManager
-For managing/listing mods
+# WIKI
+Encyclopédie de mon univers
