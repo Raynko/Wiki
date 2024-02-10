@@ -8,7 +8,7 @@
 body {
     background-color: rgb(70, 70, 70);
     margin: 0;
-    font-family: 'Impact', sans-serif;
+    font-family: 'Protest Strike', sans-serif;
     padding: 20px;
 }
 
@@ -45,7 +45,7 @@ body {
     text-shadow: 0 0 5px black;
 }
 
-.main-panel {
+.background-panel {
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.233);
     padding: 15px;
@@ -62,7 +62,7 @@ body {
 
 .section-title {
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.705);
+    background-color: rgba(59, 59, 59, 0.705);
     color: white;
     height: 100px;
     width: 100%;
@@ -97,6 +97,22 @@ body {
 }
 
 .button-page:hover {
+    background-color: rgb(93, 0, 105);
+}
+
+.inspi-button-page {
+    background-color: black;
+    color: white;
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.inspi-button-page:hover {
     background-color: rgb(93, 0, 105);
 }
 
