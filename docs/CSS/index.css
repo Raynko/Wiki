@@ -1,3 +1,8 @@
+@font-face {
+    font-family: MainFont;
+    src: url(../FONTS/FugazOne.ttf);
+}
+
 /* Réinitialisation des styles par défaut */
 * {
     margin: 0;
@@ -8,9 +13,14 @@
 body {
     background-color: rgb(70, 70, 70);
     margin: 0;
-    font-family: 'Fugaz One', sans-serif;
+    font-family: 'MainFont', sans-serif;
     padding: 20px;
 }
+
+.straight-text {
+    transform: skewX(10deg);
+}
+
 
 .background-image {
     background-image: url('../IMG/WALL/Wallpaper.jpg');
@@ -41,7 +51,7 @@ body {
     margin-right: auto;
     max-width: 700px;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     text-shadow: 0 0 5px black;
 }
 
@@ -131,7 +141,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: 17px;
-    margin-bottom: 5px;
+    margin-top: -5px;
 }
 
 .ComingSoon {
