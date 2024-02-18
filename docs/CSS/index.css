@@ -114,23 +114,8 @@ body {
 }
 
 .button-page:hover {
-    background-color: rgb(93, 0, 105);
-}
-
-.inspi-button-page {
-    background-color: black;
-    color: white;
-    height: 100px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 100%;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.inspi-button-page:hover {
-    background-color: rgb(93, 0, 105);
+    background-color: rgb(240, 201, 129);
+    color: black;
 }
 
 .page-icon-block {
@@ -148,7 +133,34 @@ body {
     width: 100%;
     text-align: center;
     font-size: 17px;
-    margin-top: -5px;
+    margin-top: -10px;
+}
+
+.inspi-button-page {
+    background-color: black;
+    color: white;
+    height: 100px;
+    padding-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.inspi-button-page:hover {
+    background-color: rgb(240, 201, 129);
+    color: black;
+}
+
+.page-inpi-text {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
 }
 
 .ComingSoon {
