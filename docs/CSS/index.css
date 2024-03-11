@@ -27,8 +27,8 @@ body {
 
 
 .background-image {
-    filter: blur(.2vw);
-    background-image: url('../IMG/WALL/WallpaperNIght.png');
+    /*filter: blur(.1vw);*/
+    background-image: url('../IMG/WALL/WallpaperCloud2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
