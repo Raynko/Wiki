@@ -1,8 +1,13 @@
 function Navigate(_page) {
-    var front
-    front = "/docs/"
-    front = "/Wiki/"
-    
+    var front;
+    if (window.location.protocol === "file:") {
+        // En mode local
+        front = "/docs/";
+    } else {
+        // Sur un serveur
+        front = "/Wiki/";
+    }
+
     var univers = front + "Pages/Univers/";
 
     switch (_page)
