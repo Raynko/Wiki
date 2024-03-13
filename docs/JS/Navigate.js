@@ -24,4 +24,5 @@ function Navigate(_page) {
 
 function Nav(_thisPage) {
     window.location.href = _thisPage + ".html";
+    console.log("Redirection vers :", window.location.href);
 }
