@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <script src="/docs/JS/Navigate.js"></script>
-    <script>LoadPageStyles('index');</script>
+    <script>
+        var scriptSrc = window.location.hostname === "127.0.0.1" ? "/docs/JS/Navigate.js" : "/Wiki/JS/Navigate.js";
+        var scriptElement = document.createElement('script');
+        scriptElement.src = scriptSrc;
+        document.head.appendChild(scriptElement);
+        window.onload = function() {
+            LoadPageStyles('index');
+        };
+    </script>
 </head>
 <body>
     <div class="background-image"></div>
