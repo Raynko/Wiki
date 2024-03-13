@@ -1,7 +1,8 @@
 function Navigate(_page) {
-
-    var front = "/Wiki/"
-    /* var front = "/docs/" */
+    var front
+    front = "/docs/"
+    front = "/Wiki/"
+    
     var univers = front + "Pages/Univers/";
 
     switch (_page)
