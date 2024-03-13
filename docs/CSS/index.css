@@ -8,10 +8,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-scrollbar {
+        display: none;
+      }
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 body {
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(33, 33, 33);
     margin: 0;
     font-family: 'MainFont', sans-serif;
     padding: 20px;
@@ -28,7 +33,7 @@ body {
 
 .background-image {
     /*filter: blur(.1vw);*/
-    background-image: url('../IMG/WALL/WallpaperCloud2.jpg');
+    background-image: url('../IMG/WALL/WallpaperDay.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -64,6 +69,51 @@ body {
     0 1.5px rgb(212, 177, 113),
     0 2px rgb(212, 177, 113),
     0 2.5px rgb(212, 177, 113);
+}
+
+.breadcrumb-panel {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:left;
+}
+
+.breadcrumb-element {
+    cursor: pointer;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    color: white;
+    height: 28px;
+}
+
+.breadcrumb-element:hover {
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 4px;
+}
+
+.breadcrumb-current {
+    height: 28px;
+    border-radius: 3px;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    color: rgb(240, 201, 129);
+}
+
+.breadcrumb-seperator {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 25px;
+    position: relative;
+    margin-top: -6px;
+    color: white;
 }
 
 .background-panel {
