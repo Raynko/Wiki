@@ -6,9 +6,8 @@
         var scriptElement = document.createElement('script');
         scriptElement.src = scriptSrc;
         document.head.appendChild(scriptElement);
-        window.onload = function() {
-            LoadPageStyles('Index');
-        };
+        document.addEventListener('DOMContentLoaded', function() {
+        LoadPageStyles('Index');});
     </script>
 </head>
 <body>
