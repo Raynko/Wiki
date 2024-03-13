@@ -1,5 +1,8 @@
 function Navigate(_page) {
-    var univers = "/docs/PAGES/Univers/";
+
+    var front = "/Wiki/"
+    /* var front = "/docs/" */
+    var univers = front + "Pages/Univers/";
 
     switch (_page)
     {
@@ -8,7 +11,7 @@ function Navigate(_page) {
             Nav(univers + _page);
             break;
         default:
-            window.location.href = "/docs/index.html";
+            Nav(front + "index")
             break;
     }
 }
