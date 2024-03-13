@@ -1,6 +1,6 @@
 function Navigate(_page) {
     var front;
-    if (window.location.protocol === "file:") {
+    if (window.location.hostname === "127.0.0.1") {
         // En mode local
         front = "/docs/";
     } else {
