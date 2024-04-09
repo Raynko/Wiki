@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <script>
-        var scriptSrc = window.location.hostname === "127.0.0.1" ? "/docs/JS/Navigate.js" : "/Wiki/JS/Navigate.js";
-        var scriptElement = document.createElement('script');
-        scriptElement.src = scriptSrc;
-        scriptElement.onload = function() {LoadPageStyles('Races')}
-        document.head.appendChild(scriptElement);
-    </script>
+    <script src="./JS/Navigate.js"></script>
+    <script>LoadPageStyles('Races')</script>
 </head>
 <body>
     <div class="background-image"></div>
